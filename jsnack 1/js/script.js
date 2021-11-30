@@ -15,7 +15,13 @@ function getRandomName() {
     return randomInvited;
 }
 
-const numInvite = parseInt(prompt('Quanti invitati avrà la festa?'));
+let numInvite = parseInt(prompt('Quanti invitati avrà la festa?'));
+console.log(numInvite);
+
+while (isNaN(numInvite) || numInvite > 200 || numInvite < 0) {
+    numInvite = parseInt(prompt('VALORE NON VALIDO - Quanti invitati avrà la festa?'));
+}
+
 const invited = [];
 
 while (invited.length < numInvite) {
