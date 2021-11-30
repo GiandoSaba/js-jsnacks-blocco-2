@@ -25,4 +25,13 @@ while (invited.length < numInvite) {
     }
 }
 
-console.log(invited);
+const ul = document.querySelector('.list');
+
+for (let i = 0; i < invited.length; i++) {
+    const element = invited[i];
+    const li = document.createElement('li');
+    li.innerHTML = element;
+    ul.append(li);
+
+    
+}
