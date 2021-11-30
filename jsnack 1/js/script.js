@@ -1,8 +1,8 @@
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
 
-const listName = ['Giando', 'Luca', 'Antonio', 'Lucrezia', 'Lucia', 'Sara', 'Nicola', 'Daniele', 'Riccardo', 'Serena', 'Maria'];
+const listName = ['Giando', 'Luca', 'Antonio', 'Lucrezia', 'Lucia', 'Sara', 'Nicola', 'Daniele', 'Riccardo', 'Serena', 'Maria', 'Fulvio', 'Roberto', 'Ferdinando', 'Chiara', 'Thomas', 'Elisabetta', 'Francesco'];
 
-const listSurname = ['Rossi', 'Bianchi', 'Verdi', 'Sabato', 'Ferilli', 'Scotti', 'Zerbi', 'Mammuccari', 'De Filippi', 'Desantis', 'Sakara'];
+const listSurname = ['Rossi', 'Bianchi', 'Verdi', 'Sabato', 'Ferilli', 'Scotti', 'Zerbi', 'Mammuccari', 'De Filippi', 'Desantis', 'Sakara', 'Moccia', 'Intini', 'Santoro', 'Marra', 'Enzin'];
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
