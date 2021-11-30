@@ -1,8 +1,8 @@
 // Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di invitati.
 
-const listName = ['Giando', 'Luca', 'Antonio', 'Lucrezia', 'Lucia', 'Sara', 'Nicola', 'Daniele', 'Riccardo', 'Serena', 'Maria', 'Fulvio', 'Roberto', 'Ferdinando', 'Chiara', 'Thomas', 'Elisabetta', 'Francesco'];
+const listName = ['Giando', 'Luca', 'Antonio', 'Lucrezia', 'Lucia', 'Sara', 'Nicola', 'Daniele', 'Riccardo', 'Serena', 'Maria', 'Fulvio', 'Roberto', 'Ferdinando', 'Chiara', 'Thomas', 'Elisabetta', 'Francesco', 'Rudy', 'Gerry', 'Teodoro', 'Mario', 'Mariateresa', 'Stefania', 'Stefano', 'Romoaldo'];
 
-const listSurname = ['Rossi', 'Bianchi', 'Verdi', 'Sabato', 'Ferilli', 'Scotti', 'Zerbi', 'Mammuccari', 'De Filippi', 'Desantis', 'Sakara', 'Moccia', 'Intini', 'Santoro', 'Marra', 'Enzin'];
+const listSurname = ['Rossi', 'Bianchi', 'Verdi', 'Sabato', 'Ferilli', 'Scotti', 'Zerbi', 'Mammuccari', 'De Filippi', 'Desantis', 'Sakara', 'Moccia', 'Intini', 'Santoro', 'Marra', 'Enzin', 'Cartin', 'Rodriguez', 'De Sica', 'Boldi', 'Verdone', 'Siani', 'Cutugno', 'Merluzzo'];
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
@@ -18,7 +18,7 @@ function getRandomName() {
 let numInvite = parseInt(prompt('Quanti invitati avrà la festa?'));
 console.log(numInvite);
 
-while (isNaN(numInvite) || numInvite > 200 || numInvite < 0) {
+while (isNaN(numInvite) || numInvite > 500 || numInvite < 0) {
     numInvite = parseInt(prompt('VALORE NON VALIDO - Quanti invitati avrà la festa?'));
 }
 
